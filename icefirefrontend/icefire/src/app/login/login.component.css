@@ -1,0 +1,12 @@
+.error-text {
+    color: crimson;
+}
+
+.small-style {
+    border-style: outset;
+    border-color: coral;
+}
+
+.login-button {
+    background-color: orange;
+}

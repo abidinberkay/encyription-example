@@ -1,0 +1,17 @@
+version: "2"
+services:
+  icefirefrontend:
+    container_name: icefirefrontend
+    image: icefirefrontend
+    build: ./icefirefrontend/icefire
+    ports:
+      - "4200:4200"
+    depends_on:
+      - icefirebackend
+
+  icefirebackend:
+    container_name: icefirebackend
+    image: icefirebackend
+    build: ./icefirebackend
+    ports:
+      - "8080:8080"

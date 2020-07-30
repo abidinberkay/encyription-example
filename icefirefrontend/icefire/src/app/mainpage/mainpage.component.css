@@ -1,0 +1,65 @@
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.action-div {
+    display: inline-table;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 500px; 
+}
+
+.button-div {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.table-mat-card {
+    background-color: #FC945F;
+    width: 800px;
+}
+
+.mat-elevation-z8 {
+    width: 100%;
+    display: inline-table;
+}
+
+.mat-header-cell {
+    text-align: center;
+}
+
+.mat-cell {
+    text-align: center;
+}
+
+.custom-table-row {
+    cursor: pointer;
+}
+
+.mat-row:hover {
+    background-color: orange;
+}
+
+.input-field {
+    cursor: pointer;
+}
+
+.custom-table-header {
+    font-size: xx-large;
+    color: orange;
+    font-family: fantasy;
+}
+
+.label-style {
+    font-family: fantasy;
+}
+
+.mat-card-style {
+    background-color: #F85300;
+    width: 800px;
+}

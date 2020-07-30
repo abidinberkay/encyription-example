@@ -1,0 +1,12 @@
+.error-text {
+    color: crimson;
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-button {
+    background-color: orange;
+}

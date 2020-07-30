@@ -1,0 +1,31 @@
+<div class="main-div">
+    <mat-card class="mat-card-style">
+        <mat-card-title class="label-style">ENTRY ACTIONS</mat-card-title>
+        <mat-card-content>
+            <div class="action-div">
+                <div>
+                    <input [(ngModel)]="entry.text" class="input-field form-control" (keyup)="onSearchChange()">
+                </div>
+                <div class="button-div">
+                    <button type="submit" class="btn btn-success" (click)="saveEntry()" [disabled]="!entry.text">Encrypt</button>
+                    <button type="submit" class="btn btn-warning" (click)="decryptText()"[disabled]="!entry.text || !enableDecryptButton">Decrypt</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="table-mat-card" [hidden]=!this.showTable>
+        <mat-card-title class="label-style">ENTRIES OF THE USER</mat-card-title>
+        <mat-card-content>
+        <mat-table #table [dataSource]="entryList" class="mat-elevation-z8">
+            <ng-container matColumnDef="text">
+                <th mat-header-cell class="custom-table-header" *matHeaderCellDef> Text </th>
+                <td mat-cell *matCellDef="let element" fxFlex="90%"> {{element.text}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row class="custom-table-row" *matRowDef="let row; columns: displayedColumns;" (click)="rowClick(row.text)"></tr>
+        </mat-table>
+    </mat-card-content>
+    </mat-card>
+</div>
