@@ -21,7 +21,7 @@
           <small class="error-text" [class.d-none]="password.valid || password.untouched">Password is required</small>
         </div>
         <div id="buttonDiv" class="button-div">
-            <button type="submit" class="register-button btn btn-info" (click)="registerUser()" [disabled] = "!user.email || !user.password">Register</button>
+            <button type="submit" class="register-button btn btn-info" (click)="registerUser()" [disabled] = "!user.email || !user.password || email.invalid">Register</button>
             <button type="submit" class="register-button btn btn-info" (click)="goBackToLoginPage()">Back to Login Page</button>
         </div> 
       </form>

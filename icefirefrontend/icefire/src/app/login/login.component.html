@@ -17,7 +17,7 @@
     </div>
     <small class="error-text">{{msg}}</small>
     <div>
-      <button type="submit" class="login-button btn btn-info" [disabled] = "!user.email || !user.password">Login</button>
+      <button type="submit" class="login-button btn btn-info" [disabled] = "!user.email || email.invalid || !user.password">Login</button>
       <small class="small-style float-right" [routerLink]="['/registration']">New User ? Register here</small>
     </div>
   </form>
