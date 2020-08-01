@@ -41,10 +41,12 @@ Running the project without docker:
         The application will start to work on browser link http://localhost:4200
         
 Update notes:
+
     -There was a bug on login and register buttons that even the email format has not valid pattern, the buttons were enabled.
     This bug is solved.
     
 TODO (To improve)
+
     -For authentication, session based authorization and authentication will be implemented. JWT(Json web token) is implemented
     with spring security on back-end and will be added when I solve fetch api request structure.
     I have used spring security before but cannot apply right now because I have used fetch api first time and 
