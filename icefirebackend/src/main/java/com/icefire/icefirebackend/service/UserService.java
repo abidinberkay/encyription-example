@@ -8,13 +8,13 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 
-@Transactional
 @Service
 public class UserService {
 
     @Autowired
     UserRepository userRepository;
 
+    @Transactional
     public User saveUser(User user) {
         user.setSecretKey(generateRandomKey());
         return userRepository.save(user);
